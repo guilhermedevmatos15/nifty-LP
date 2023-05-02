@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
 :root {
-   --color-01: #ed1b1b;
-   --color-02: #2369e3;
-   --color-03: #063d1e;
-   --color-04: #3fb873;
-   --color-05: #171d19;
+   --color-01: #8D44F2;
+   --color-02: #34D2EF;
+   --color-03: #3F0540;
+   --color-04: #220426;
+   --color-dark: #0A0A0D;
 
    --font-default: 'Montserrat', Arial, sans-serif;
 }
@@ -16,7 +16,7 @@
    box-sizing: border-box;
 }
 
-body {
+body, .root {
    width: 100%;
    height: auto;
    font-family: var(--font-default);
