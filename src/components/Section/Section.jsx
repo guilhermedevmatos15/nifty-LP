@@ -9,16 +9,14 @@ import './Section.css';
 
 // * Icons
 
-
-const Section = props => {
-
+const Section = (props) => {
    const { id } = props;
 
    return (
-      <section className='Section' id={`section-${id}`}>
+      <section className="Section" id={`section-${id}`}>
          {props.children}
       </section>
    );
-}
+};
 
 export default Section;

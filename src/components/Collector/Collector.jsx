@@ -12,7 +12,6 @@ import './Collector.css';
 const Collector = (props) => {
    const { image, username, priceUsd, position } = props;
 
-
    function getRandomIntInclusive(min = 0, max = 0) {
       min = Math.ceil(min);
       max = Math.floor(max);
@@ -38,8 +37,6 @@ const Collector = (props) => {
 
    const result = renderPorcentage();
 
-
-   
    return (
       <div className="Collector">
          <div>

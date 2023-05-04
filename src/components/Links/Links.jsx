@@ -10,9 +10,7 @@ import './Links.css';
 
 // * Icons
 
-
 const Links = props => {
-
    const { directionLinks } = props;
 
    return (

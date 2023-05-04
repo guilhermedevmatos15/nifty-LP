@@ -15,16 +15,41 @@ import people05 from '../../assets/img/pexels-đỗ-ngọc-tú-quyên-1520760_Ea
 
 // * Icons
 
-const Collectors = props => {
+const Collectors = (props) => {
    return (
-      <div className='Collectors'>
-         <Collector image={people01} username='NoobMaster69' priceUsd={32.322} position={1} />
-         <Collector image={people02} username='GreenKoala518' priceUsd={30.123} position={2} />
-         <Collector image={people03} username='Charllena' priceUsd={29.472} position={3} />
-         <Collector image={people04} username='FuryFly' priceUsd={28.822} position={4} />
-         <Collector image={people05} username='Hitto06' priceUsd={27.604} position={5} />
+      <div className="Collectors">
+         <Collector
+            image={people01}
+            username="NoobMaster69"
+            priceUsd={32.322}
+            position={1}
+         />
+         <Collector
+            image={people02}
+            username="GreenKoala518"
+            priceUsd={30.123}
+            position={2}
+         />
+         <Collector
+            image={people03}
+            username="Charllena"
+            priceUsd={29.472}
+            position={3}
+         />
+         <Collector
+            image={people04}
+            username="FuryFly"
+            priceUsd={28.822}
+            position={4}
+         />
+         <Collector
+            image={people05}
+            username="Hitto06"
+            priceUsd={27.604}
+            position={5}
+         />
       </div>
    );
-}
+};
 
 export default Collectors;

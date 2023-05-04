@@ -2,6 +2,7 @@ import React from 'react';
 
 // * Components
 import Section from '../../components/Section/Section';
+import Logo from '../../components/Logo/Logo';
 import Header from '../../components/Header/Header';
 import Main from '../../components/Main/Main';
 import Slider from '../../components/Slider/Slider';
@@ -59,7 +60,7 @@ const Home = (props) => {
          </Section>
 
          <footer>
-            <img src={LogoImage} alt="logo nefty" />
+            <Logo />
             <p>
                Discover the limitless possibilities of NFTs, <br />
                joing the NFT Comunity and collect unique <br />

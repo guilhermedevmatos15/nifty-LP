@@ -11,14 +11,13 @@ import './Header.css';
 
 // * Icons
 
-
-const Header = props => {
+const Header = (props) => {
    return (
-      <header className='Header'>
+      <header className="Header">
          <Logo width={150} />
-         <Links directionLinks='row' />
+         <Links directionLinks="row" />
       </header>
    );
-}
+};
 
 export default Header;
