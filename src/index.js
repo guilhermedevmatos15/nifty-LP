@@ -14,7 +14,7 @@ import initSmoothScroll from './libs/smoothScroll';
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     initSmoothScroll(115, 1400);
-  }, 500);
+  }, 200);
 });
 
 

@@ -6,6 +6,7 @@
    --color-03: #3F0540;
    --color-04: #220426;
    --color-dark: #0A0A0D;
+   --color-bg: #101015;
 
    --font-default: 'Montserrat', Arial, sans-serif;
 }
@@ -20,4 +21,10 @@ body, .root {
    width: 100%;
    height: auto;
    font-family: var(--font-default);
+}
+
+
+/* temp */
+img {
+   width: 100px;
 }

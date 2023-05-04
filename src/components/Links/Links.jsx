@@ -13,17 +13,16 @@ import './Links.css';
 
 const Links = props => {
 
-   const { directionLinks, idsForLinks } = props;
+   const { directionLinks } = props;
 
    return (
       <nav className='Links'>
          <ul className={ directionLinks === 'row' ? 'row' : 'column' } >
-            <li><a href={`#${idsForLinks[0]}`}>Home</a></li>
-            <li><a href={`#${idsForLinks[1]}`}>Download</a></li>
-            <li><a href={`#${idsForLinks[2]}`}>NFT's</a></li>
-            <li><a href={`#${idsForLinks[3]}`}>Rank</a></li>
-            <li><a href={`#${idsForLinks[4]}`}>Newsletter</a></li>
-            <li><a href={`#${idsForLinks[5]}`}>FAQ</a></li>
+            <li><a href={`#section-main`}>Home</a></li>
+            <li><a href={`#section-artwork`}>NFT's</a></li>
+            <li><a href={`#section-rank`}>Rank</a></li>
+            <li><a href={`#section-newsletter`}>Newsletter</a></li>
+            <li><a href={`#section-faq`}>FAQ</a></li>
          </ul>
       </nav>
    );
