@@ -1,0 +1,83 @@
+.Main {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   /* gap: 250px; */
+   text-align: left;
+}
+
+.Main h1 {
+   font-size: 3rem;
+   line-height: 3.5rem;
+}
+.Main h1 span {
+   color: var(--color-01);
+}
+
+.Main .content {
+   width: 50%;
+   padding-left: 300px;
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.Main .buttons-mobiles-apps {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.Main .button-mobile-app {
+   padding: 15px 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   border: 1px solid var(--color-02);
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all 0.4s;
+}
+.Main .button-mobile-app:hover {
+   background-color: var(--color-02);
+   color: var(--color-dark);
+   cursor: pointer;
+   transform: translateY(-5px);
+   transition: all 0.4s;
+}
+.Main .button-mobile-app:hover .icon.google-play,
+.Main .button-mobile-app:hover .icon.apple-store {
+   color: var(--color-dark);
+}
+.Main .button-mobile-app p {
+   font-weight: 300;
+   text-transform: uppercase;
+   font-size: 0.65rem;
+}
+.Main .button-mobile-app .icon {
+   font-size: 1.5rem;
+}
+.Main .button-mobile-app .icon.google-play {
+   color: var(--color-02);
+}
+.Main .button-mobile-app .icon.apple-store {
+   color: var(--color-01);
+}
+
+.Main .image {
+   padding-left: 100px;
+   width: 50%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
+
+.Main img {
+   width: 400px;
+}

@@ -1,0 +1,30 @@
+footer {
+   margin-top: 160px;
+   width: 100%;
+   height: auto;
+   padding: 0 10px 40px 10px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+}
+
+footer a {
+   color: var(--color-01);
+   cursor: pointer;
+   transition: all 0.4s;
+}
+
+footer a:hover {
+   color: var(--color-02);
+   cursor: pointer;
+   transition: all 0.4s;
+}
+
+@media (max-width: 390px) {
+   footer br {
+      display: none;
+   }
+}

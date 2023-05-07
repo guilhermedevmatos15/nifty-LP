@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 // * Components
 
@@ -12,21 +12,19 @@ import logoImage from '../../assets/img/logos/nifty-high-resolution-logo-color-o
 // * Icons
 
 const Logo = (props) => {
-   const { width } = props;
-
    return (
       <>
-         <img src={logoImage} alt="logo nefty" width={width} />
+         <img src={logoImage} alt="logo nefty" className='Logo' />
       </>
    );
 };
 
-Logo.prototype = {
-   width: PropTypes.number.isRequired,
-};
+// Logo.prototype = {
+//    width: PropTypes.number.isRequired,
+// };
 
-Logo.defaultProps = {
-   width: 100,
-};
+// Logo.defaultProps = {
+//    width: 100,
+// };
 
 export default Logo;

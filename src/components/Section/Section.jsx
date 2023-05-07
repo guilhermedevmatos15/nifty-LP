@@ -10,10 +10,10 @@ import './Section.css';
 // * Icons
 
 const Section = (props) => {
-   const { id } = props;
+   const { id, noMargin } = props;
 
    return (
-      <section className="Section" id={`section-${id}`}>
+      <section className={`Section ${noMargin ? 'noMargin' : ''}`} id={`section-${id}`}>
          {props.children}
       </section>
    );

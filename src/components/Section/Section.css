@@ -1,3 +1,35 @@
 .Section {
+   margin: 200px auto 0 auto;
+   width: 100%; max-width: 1600px;
    position: relative;
+}
+
+
+
+
+/* Individuals Sections */
+.Section#section-main {
+   margin-top: 100px;
+}
+
+.Section#section-artwork, .Section#section-rank {
+   padding: 0 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.Section#section-artwork > div, .Section#section-rank > div {
+   width: 100%; max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   /* gap: 2px; */
+}
+.Section#section-artwork > div > p, .Section#section-rank > div > p {
+   color: var(--color-01);
+   font-size: 0.9rem;
+}
+.Section#section-artwork > div > h2, .Section#section-rank > div > h2 {
+   font-size: 1.6rem;
+   font-weight: 600;
 }

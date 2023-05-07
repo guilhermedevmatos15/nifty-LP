@@ -25,12 +25,14 @@ const Collector = (props) => {
       if (number < 0) {
          result.className = 'negative';
          result.signal = '-';
+         result.value = Math.abs(number);
       } else if (number === 0) {
          result.className = 'zero';
          result.signal = '';
+      } else {
+         result.className = 'positive';
+         result.signal = '+';
       }
-      result.className = 'positive';
-      result.signal = '+';
 
       return result;
    }
@@ -39,7 +41,7 @@ const Collector = (props) => {
 
    return (
       <div className="Collector">
-         <div>
+         <div className='info'>
             <p className="position">{position}</p>
             <img src={image} alt={username + ' image'} />
             <div>
@@ -50,7 +52,7 @@ const Collector = (props) => {
             </div>
          </div>
          <div>
-            <h3>${Number(priceUsd).toFixed(2)}</h3>
+            <h3>${(priceUsd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }))}</h3>
             <p className={`percentage ${result.className}`}>
                {`${result.signal} ${result.value}`}%
             </p>

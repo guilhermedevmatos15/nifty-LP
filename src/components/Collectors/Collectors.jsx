@@ -21,31 +21,31 @@ const Collectors = (props) => {
          <Collector
             image={people01}
             username="NoobMaster69"
-            priceUsd={32.322}
+            priceUsd={32322.22}
             position={1}
          />
          <Collector
             image={people02}
             username="GreenKoala518"
-            priceUsd={30.123}
+            priceUsd={30123.33}
             position={2}
          />
          <Collector
             image={people03}
             username="Charllena"
-            priceUsd={29.472}
+            priceUsd={29947.472}
             position={3}
          />
          <Collector
             image={people04}
             username="FuryFly"
-            priceUsd={28.822}
+            priceUsd={28292.822}
             position={4}
          />
          <Collector
             image={people05}
             username="Hitto06"
-            priceUsd={27.604}
+            priceUsd={27935.604}
             position={5}
          />
       </div>

@@ -4,7 +4,7 @@
    border-radius: 30px;
    background-repeat: no-repeat;
    background-size: cover;
-   background-position: center center;
+   background-position: top center;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -59,7 +59,6 @@
 
 .NFT:hover {
    transform: translateY(-10px);
-   cursor: pointer;
    transition: all .4s;
 }
 

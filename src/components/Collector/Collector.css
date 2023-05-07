@@ -1,0 +1,66 @@
+.Collector {
+   width: 100%;
+   padding: 20px 30px;
+   border: 1px solid var(--color-01);
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   transition: all .4s;
+}
+
+.Collector * {
+   cursor: default;
+}
+
+.Collector .info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.Collector .info img {
+   width: 50px;
+   padding: 1px;
+   border-radius: 50%;
+   border: 2px solid var(--color-01);
+   box-shadow: 0 0 8px #ff4cd8e2;
+}
+
+.Collector .info .position {
+   font-size: 1.4rem;
+   color: var(--color-02);
+   font-weight: 600;
+}
+
+.Collector .info .username {
+   font-weight: 500;
+}
+.Collector .info .username--lower {
+   margin-top: 2px;
+   color: var(--color-02);
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+.Collector .percentage {
+   margin-top: 2px;
+   text-align: right;
+   font-size: 0.9rem;
+}
+.Collector .percentage.positive {
+   color: rgba(98, 255, 98, 0.724);
+}
+.Collector .percentage.negative {
+   color: rgb(255, 87, 87);
+}
+.Collector .percentage.zero {
+   color: white;
+}
+
+
+.Collector:hover {
+   transform: translateY(-5px);
+   transition: all .4s;
+}
