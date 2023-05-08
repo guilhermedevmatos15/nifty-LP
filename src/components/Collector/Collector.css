@@ -6,6 +6,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 20px;
    transition: all .4s;
 }
 
@@ -63,4 +64,18 @@
 .Collector:hover {
    transform: translateY(-5px);
    transition: all .4s;
+}
+
+
+@media (max-width: 550px) {
+   .Collector {
+      padding: 20px 18px;
+   }
+}
+
+@media (max-width: 480px) {
+   .Collector {
+      font-size: 13px;
+      overflow: auto;
+   }
 }

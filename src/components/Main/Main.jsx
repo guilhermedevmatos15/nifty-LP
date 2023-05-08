@@ -7,18 +7,79 @@ import NFT from '../NFT/NFT';
 import './Main.css';
 
 // * Images
-import BoredLogo from '../../assets/img/NFT/boredApeYacht/BoredApeYachtClubLogo.png';
+import boredApeYachtLogo from '../../assets/img/NFT/boredApeYacht/BoredApeYachtClubLogo.png';
+import boredApeYacht01 from '../../assets/img/NFT/boredApeYacht/BoredApeYacht02.jpg';
+import boredApeYacht02 from '../../assets/img/NFT/boredApeYacht/BoredApeYachtClub03.jpg';
+
 import AzukiLogo from '../../assets/img/NFT/azuki/azukiLogo.jpg';
-import BoredNft from '../../assets/img/NFT/boredApeYacht/BoredApeYachtClub01.jpg';
 import AzukiNft from '../../assets/img/NFT/azuki/azuki01.jpg';
 
-import illustration from '../../assets/img/undraw_internet_on_the_go_re_vben.svg';
+import doodlesLogo from '../../assets/img/NFT/doodle/doodleLogo.jpg';
+import doodles01 from '../../assets/img/NFT/doodle/doodle01.jpg';
+
+import cloneXLogo from '../../assets/img/NFT/cloneX/cloneXLogo.jpg';
+import cloneX01 from '../../assets/img/NFT/cloneX/cloneX01.jpg';
+import cloneX02 from '../../assets/img/NFT/cloneX/cloneX02.jpg';
+
+// import illustration from '../../assets/img/undraw_internet_on_the_go_re_vben.svg';
 
 // * Icons
 import { FaGooglePlay } from 'react-icons/fa';
 import { AiFillApple } from 'react-icons/ai';
 
 const Main = (props) => {
+   const NFTs = [
+      <NFT
+         nftImage={boredApeYacht01}
+         collectionImage={boredApeYachtLogo}
+         collection="Bored Ape Yacht"
+         priceInEth={51.2469}
+      />,
+      <NFT
+         nftImage={AzukiNft}
+         collectionImage={AzukiLogo}
+         collection="Azuki"
+         priceInEth={16.355}
+      />,
+      <NFT
+         nftImage={boredApeYacht02}
+         collectionImage={boredApeYachtLogo}
+         collection="Bored Ape Yacht"
+         priceInEth={51.2469}
+      />,
+      <NFT
+         nftImage={doodles01}
+         collectionImage={doodlesLogo}
+         collection="Doodle"
+         priceInEth={2.815}
+      />,
+      <NFT
+         nftImage={cloneX01}
+         collectionImage={cloneXLogo}
+         collection="CloneX"
+         priceInEth={3.31}
+      />,
+      <NFT
+         nftImage={cloneX02}
+         collectionImage={cloneXLogo}
+         collection="CloneX"
+         priceInEth={3.32}
+      />,
+   ];
+
+   function renderRandomNft() {
+      function getRandomIntInclusive(min = 0, max = 0) {
+         min = Math.ceil(min);
+         max = Math.floor(max);
+         return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
+      // raffle the nft generated
+      const randomNumber = getRandomIntInclusive(0, NFTs.length - 1);
+
+      return NFTs[randomNumber];
+   }
+
    return (
       <main className="Main">
          <div className="content">
@@ -43,19 +104,9 @@ const Main = (props) => {
             </div>
          </div>
          <div className="image">
-            {/* <NFT
-               nftImage={BoredNft}
-               collectionImage={BoredLogo}
-               collection="Bored Ape Yacht"
-               priceInEth={51.2469}
-            />
-            <NFT
-               nftImage={AzukiNft}
-               collectionImage={AzukiLogo}
-               collection="Azuki"
-               priceInEth={16.355}
-            /> */}
-            <img src={illustration} alt="" />
+            {renderRandomNft()}
+
+            {/* <img src={illustration} alt="illustration main" /> */}
          </div>
       </main>
    );
